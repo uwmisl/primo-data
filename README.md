@@ -47,6 +47,5 @@ Layout:
 
 | ImageID | Count |
 | ------- | ----- |
-| The OpenImagesV4 ID | The number of times the barcode for this image was observed in the
-sequencing reads associated with this query. |
+| The OpenImagesV4 ID | The number of times the barcode for this image was observed in the sequencing reads associated with this query. |
 
