@@ -49,3 +49,14 @@ Layout:
 | ------- | ----- |
 | The OpenImagesV4 ID | The number of times the barcode for this image was observed in the sequencing reads associated with this query. |
 
+### `analysis/distances`
+
+Format: directory of gzipped comma-separated text, with one file per query.
+
+Layout:
+
+| ImageID | Euclidean Distance |
+| ------- | ------------------ |
+| The OpenImagesV4 ID | The Euclidean distance between the feature vector of the query (indicated by the filename) and the feature vector of this image. |
+
+
