@@ -59,4 +59,15 @@ Layout:
 | ------- | ------------------ |
 | The OpenImagesV4 ID | The Euclidean distance between the feature vector of the query (indicated by the filename) and the feature vector of this image. |
 
+### `analysis/thresholds`
 
+Format: directory of comma-separated text files, with one file per query.
+
+Layout:
+
+Each row represents the statistics for a set of images with read counts at or
+above the threshold.
+
+| Threshold | Number Retrieved | 100-Nearest-Neighbor Recall |
+| --------- | ---------------- | --------------------------- |
+| Images in this set had at least this read count | The total number of images in this set | The number of the 100 nearest neighbors to the query in this set |
