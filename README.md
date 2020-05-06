@@ -49,6 +49,10 @@ Layout:
 | ------- | ----- |
 | The OpenImagesV4 ID | The number of times the barcode for this image was observed in the sequencing reads associated with this query. |
 
+**Note**: due to contamination from an unrelated experiment using the same barcode, the count for the first image (`e39871fd9fd74f55`) is abnormally high.
+We set it to zero during analysis for each query. There was no impact on the conclusions drawn from the analysis.
+
+
 ### `analysis/distances`
 
 Format: directory of gzipped comma-separated text, with one file per query.
