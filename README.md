@@ -85,7 +85,8 @@ using a particular algorithm and query, with varying parameters.
 Layout:
 | Algorithm | Query ID | Number Retrieved | Database Size | # of Nearest Neighbors | Nearest Neighbor Recall | Algorithm Parameters |
 | --------- | -------- | ---------------- | ------------- | ---------------------- | ----------------------- | -------------------- |
-| The search algorithm used. | The query image used to conduct the search. | The number of images in the database. | The desired number of nearest neighbors to be retrieved. | The number of nearest neighbors retrieved by the search. | The parameters used for constructing the index and/or performing the search. |
+| The search algorithm used. | The query image used to conduct this search. | The number of images retrieved by this search. | The number of images in the database. | The desired number of nearest neighbors to be retrieved by this search. | The actual number of nearest neighbors retrieved by this search. | The parameters used for constructing the index and/or performing this search. |
 
 **Note 1**: The rows labeled with the `primo` algorithm contain the same data as the `analysis/thresholds` directory.
+
 **Note 2**: Most of the *in silico* benchmarks were conducted with a slightly larger database. The results presented in the paper are normalized to the database size.
