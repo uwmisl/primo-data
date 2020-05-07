@@ -63,6 +63,7 @@ Layout:
 | ------- | ------------------ |
 | The OpenImagesV4 ID | The Euclidean distance between the feature vector of the query (indicated by the filename) and the feature vector of this image. |
 
+
 ### `analysis/thresholds`
 
 Format: directory of comma-separated text files, with one file per query.
@@ -75,3 +76,16 @@ above the threshold.
 | Threshold | Number Retrieved | 100-Nearest-Neighbor Recall |
 | --------- | ---------------- | --------------------------- |
 | Images in this set had at least this read count | The total number of images in this set | The number of the 100 nearest neighbors to the query in this set |
+
+### `analysis/benchmarks.csv`
+
+Format: comma-separated text. Each row represents a search through the database
+using a particular algorithm and query, with varying parameters.
+
+Layout:
+| Algorithm | Query ID | Number Retrieved | Database Size | # of Nearest Neighbors | Nearest Neighbor Recall | Algorithm Parameters |
+| --------- | -------- | ---------------- | ------------- | ---------------------- | ----------------------- | -------------------- |
+| The search algorithm used. | The query image used to conduct the search. | The number of images in the database. | The desired number of nearest neighbors to be retrieved. | The number of nearest neighbors retrieved by the search. | The parameters used for constructing the index and/or performing the search. |
+
+**Note 1**: The rows labeled with the `primo` algorithm contain the same data as the `analysis/thresholds` directory.
+**Note 2**: Most of the *in silico* benchmarks were conducted with a slightly larger database. The results presented in the paper are normalized to the database size.
